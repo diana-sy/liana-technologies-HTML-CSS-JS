@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/ad71ca8aee.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+  <div class="bodyContainer">
+  <!--Top-->
+  <div class="hedaer">
+    <div class="headerGreen">
+    <div class="nav">News
+    <span >Intranet</span>
+  <div class="languegeBar">
+   
+            
+           <!-- dropdown menu -->
+              <div class="dropdown">
+                <button class="dropbtn">In English</button>
+                <div class="dropdown-content">
+                  <a href="https://www.lianatech.fi/etusivu.html">Suomeksi</a>
+                  <a href="https://www.lianatech.de/startseite.html">auf Deutsch</a>
+                  <a href="https://www.lianatech.se/forstasidan.html">På Svenska</a>
+                  <a href="https://www.lianatech.fr/page-daccueil.html ">En Français</a>
+                </div>
+                </div>
+              </div>
+     </div> 
+    </div>
+
+ <!--logo and search box-->
+        <div class="top"> 
+          <img class="logo" src="https://www.lianatech.fi/media/layout/img/logos/lianatech_logo.svg" alt="Liana Technologies"></img>
+          <div class="topMenu">Company 
+         <span>Products</span>
+         <span>Contact Us</span>
+      
+         </div> 
+         <div class="search">
+         <input class="searchBox" type="text" placeholder="  Search"/>
+         <button class="searchButton" type="search">Search</button>
+          </div>               
+      </div>
+
+<!--Parallax-->
+    <div class="parallax">
+   <div class="parallaxText">Software fueling digital marketing
+   </div>
+      <button class="btnLearnMore">Learn more</button>
+    </div>
+</div>
+<!--Containers contact us, Products, Company-->
+
+<div class="infoContainer">
+  <div class="companyContainer">
+    <img class="company" src="img/company.jpeg" alt="Company" style="filter: blur(1.5px)"></img>
+    <div id="companyText">Company
+    </div> 
+  </div> 
+  <div class="companyContainer">
+    <img class="company" src="img/Contact us.jpeg" alt="products" style="filter: blur(1.5px)"></img>
+    <div id="companyText">Products
+    </div>  
+  </div>
+  <div class="companyContainer">
+    <img class="company" src="img/company.jpeg" alt="Ccontact" style="filter: blur(1.5px)"></img>
+    <div id="companyText">Contact Us
+    </div>  
+  </div>
+</div>
+
+<!--Counters-->
+
+<div class="counter-container">
+  <div class="clients">
+    <i class="fas fa-briefcase" style="color:green;"></i>
+    <div class="counter">
+    <h3 data-target="3000" class="count">0</h3>
+    <h6>Clients</h6>
+  </div>
+  </div>
+  <div class="employees">
+    <i class="far fa-meh-blank" style="color:green;"></i>
+    <div class="counter">
+    <h3 data-target="180" class="count">0</h3>
+    <h6>Employees</h6>
+  </div>
+  </div>
+  <div class="dailyUsers">
+    <i class="fas fa-globe-americas" style="color:green;"></i>
+    <div class="counter">
+    <h3 data-target="10000" class="count">0</h3>
+    <h6>Daily users</h6>
+  </div>
+  </div>
+</div>
+
+<!--Script counter-->
+
+<script>
+  const counters = document.querySelectorAll(".count");
+const speed = 100;
+
+counters.forEach((counter) => {
+const updateCount = () => {
+const target = parseInt(+counter.getAttribute("data-target"));
+const count = parseInt(+counter.innerText);
+const increment = Math.trunc(target / speed);
+console.log(increment);
+
+if (count < target) {
+  counter.innerText = count + increment;
+  setTimeout(updateCount, 1);
+} else {
+  count.innerText = target;
+}
+};
+updateCount();
+});
+
+</script>
+
+<!-- Latest News with Json -->
+<div class="latestNewsContainer">
+<div id ="newsTitle">Latest News</div>
+<div id="dataNews"></div> 
+</div>
+
+<!-- References with json data -->
+<div class="dataRefer">
+<div class="reference">References</div>
+<div id="referData"></div>
+</div>
+
+<!-- Subscribe  -->
+ <div class="containerSubscribe">
+   <div id="textContainerS">
+   <div class="titleSubscribe">
+     Subscribe to our newsletter
+   </div>
+   <div class="textSubscribe">
+     Follow our story and get the latest promotonial <br>
+     news about our products and events.</br>
+   </div>
+   </div>
+
+<div class=" contentInput">
+  <input id="input" type="text" value placeholder="Your email adress...">
+  <button style="cursor: pointer;" class="btnSuscribe"><span>Subscribe</span></button>
+</div>
+</div>
+
+<!-- Bottom -->
+
+<div class="bottomContainer">
+  <div class="bottomNav">
+  <div id="lianaTitle"><b>Liana Technologies</b></div>
+  <div class="bottomMenu">Company 
+    <span>Products</span>
+    <span>Contact Us</span>
+    <span>News</span>
+    <span>Intranet</span>
+</div>
+</div>
+<div class="contactContainer">
+  <div class="containerInfo">
+  <div class="contactInfo">
+    <b>Sales and inquiries</b><br>
+    Email: sales@lianatech.com<br>
+    Phone: +358 10 387 7053 </br>
+</div>
+<button id="btnContactUs">Contact us</button>
+</div>
+  <div class="socialmedia">
+  
+  <div class="fab1"><i class="fab fa-facebook-f"></i></div>
+  <div class="fab1"> <i class="fab fa-twitter"></i></div>
+  <div class="fab1"><i class="fab fa-linkedin-in"></i> </div>
+  </div>
+</div>
+</div>
+<script src="index.js"></script>
+</div>
+</body>
+</html>
+

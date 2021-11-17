@@ -1,0 +1,427 @@
+
+
+ body {
+  font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: left;
+ }
+
+/* Top  */
+     .nav{
+      display: flex;
+      flex-direction: row;
+      justify-content:end;
+      align-items:center;
+      gap: 10px;
+      padding: 2%;
+      background-color:green;
+      height: 5px;
+      color:white;
+    }
+    .languegeBar{
+      padding-right: 5%;
+      
+    }
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color:black;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    /* padding-top:20%;
+    padding-right: 32px; */
+    background-size: 7px 11px;
+    background-position: calc(100% - 14px) 50%;
+    border:1px solid gray;
+    border-radius: 4px;
+    height: 27px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+  }
+
+  .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+   
+/* Logo */
+
+
+.top{
+  display:flex;
+  flex-direction: row;
+  gap: 5%;
+  justify-content:center;
+  /* padding-left: 5%;*/
+  padding-top: 2%;
+  padding-bottom: 2%; 
+  align-items:center;
+  color:#b4b3b3;
+  
+}
+
+.logo{ 
+  display:flex;
+  justify-content: flex-start;
+  align-items:start;
+  height:40px;
+  
+}
+
+.topMenu{ 
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  gap:5%;
+  width: 45%;
+}
+.search{ 
+  display:flex;
+  gap:5px;
+  
+}
+.searchBox{ 
+  border:0.5px solid rgba(189, 188, 188, 0.87);
+  border-radius: 4px;
+  height: 22px;
+  
+}
+.searchButton{ 
+  height: 26px;
+  border:1px solid green;
+  border-radius: 4px;
+  background-color:green;
+  color:white;
+
+}
+/*parallax*/
+.parallax {
+  background-image: url("img/parallax.jpeg");
+  min-height: 300px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.parallaxText{ 
+  color:white;
+  justify-content:center;
+  font-size: xx-large;
+}
+.btnLearnMore{
+  border:1px solid green;
+  border-radius: 4px;
+  background-color:green;
+  color:white;
+  height:35px;
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 750px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+/* Containers company, products and contact us*/
+.infoContainer{
+    display: flex;
+    flex-direction:row;
+    margin:4%;
+    justify-content: center;
+  
+}
+
+.companyContainer{
+  position: relative;
+  text-align: center;
+}
+.company{
+  border-radius: 4px;
+  width:80%;
+}
+
+#companyText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  
+}
+
+/*Counters*/
+
+.counter-container{
+display:flex;
+flex-direction: row;
+align-items: center;
+margin-top: 2%;
+align-content: center;
+align-content: space-around;
+justify-content: center;
+gap:6%;
+padding-bottom: 5%;
+}
+
+.counter{
+  flex-direction: column; 
+  text-align:center;
+}
+
+.fa-briefcase:before {
+  content: "\f0b1";
+  font-size: 2.5rem;
+}
+.clients{ 
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  
+}
+.fa-meh-blank{ 
+  font-size: 2.5rem;
+}
+.employees{ 
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.fa-globe-americas{
+  font-size: 2.5rem;
+}
+.dailyUsers{ 
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+/* Latest News */
+
+#dataNews{ 
+  background-color: rgb(236, 236, 236);
+  justify-content:center;
+  display:flex;
+  flex-direction: row;
+  gap:2%;
+  width:100%;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+
+#newsTitle{ 
+  display:flex;
+  justify-content:center;
+  background-color: rgb(236, 236, 236);
+  margin-bottom:-20px;
+  padding-top:1%;
+  font-size: 18px;
+  
+}
+
+.newsBox{ 
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  width:100%;
+  padding:3%;
+  justify-content:center;
+  height: 150px;
+  border:1px solid rgb(201, 195, 195);
+   border-radius:4px;
+}
+
+.newsDate{
+  color:hsl(0deg 1% 49%);
+  font-size: 13px;
+}
+.newsText{
+font-size:19px;
+padding-top:1.5%;
+}
+
+/* References */
+.reference{
+  display:flex;
+  justify-content:center;
+  font-size:18px;
+}
+#referData{
+  align-content:center;
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+  gap:2%;
+  padding-left: 5%;
+  width:90%
+
+}
+.refBox{
+  border-radius: 4px;
+  border:1px solid rgb(201, 195, 195);
+  padding:1%;
+  justify-content:center;
+  width:80%;
+  overflow:visible
+
+}
+
+#refImg{
+  display:flex;
+  justify-content:center;
+  width:100%
+}
+#refName{
+  display:flex;
+  justify-content:center;
+  border-top:1px solid rgb(201, 195, 195);
+  width:100%;
+  font-size:bold;
+}
+#refDescription{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+/* Subscribe  */
+
+.containerSubscribe{
+  border-top:1px solid rgb(201, 195, 195);
+  margin-top:5%;
+  
+}
+#textContainerS{
+  display:flex;
+  flex-direction: column;
+}
+.titleSubscribe{
+  display:flex;
+  justify-content:center;
+  font-size: 19px;
+}
+.textSubscribe{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  font-size:13px;
+  padding-bottom: 2%;
+}
+.contentInput{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:1%;
+  align-items: center;
+  padding-bottom: 3%;
+}
+#input{
+  height:20px;
+  width:300px;
+  border:1px solid rgb(201, 195, 195);
+  border-radius:4px;
+  padding:0.5%
+}
+.btnSuscribe{
+  height:30px;
+  background-color: green;
+  border-radius: 4px;
+  border-color: green;
+  color:white;
+}
+
+/* Bottom */
+.bottomContainer{
+  background-color: black;
+  color:white;
+  
+}
+.bottomNav{
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  padding:2%;
+  gap: 45%;
+}
+#lianaTitle{
+  font-size: 18px;
+  width:100%;
+}
+.bottomMenu{
+display:flex;
+align-self: center;
+gap: 4%;
+width: 100%;
+padding-right: 2%;
+font-size: 14px;
+}
+
+.contactContainer{
+  padding:2%;
+}
+
+.containerInfo{
+  display:flex;
+  flex-direction: row;
+  gap:3%
+}
+#btnContactUs{
+  height:30px;
+  border-radius: 5px;
+  color:white;
+  background-color:green;
+  border-color: green;
+  align-self: end;
+}
+
+.socialmedia{
+  display: flex;
+  justify-content:flex-end;
+  gap:2%
+}
+
+.fab1{
+  display:flex;
+  justify-content:center;
+  border-radius:50%;
+  background-color:green;
+  width: 26px;
+  height: 26px;
+}
+.fa-facebook-f{
+  margin-left:1%;
+}
