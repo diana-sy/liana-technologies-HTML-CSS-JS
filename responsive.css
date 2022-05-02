@@ -6,8 +6,6 @@
   .bodyContainer {
       display:flex;
       flex-direction:column;
-    /* padding-right: 24px !important;
-    padding-left: 24px !important; */
     justify-content:center;
     font-weight: normal;
     align-items:center;
@@ -185,8 +183,6 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
      .bodyContainer {
-    /* padding-right: 24px !important;
-    padding-left: 24px !important; */
     font-weight: normal;
     align-items:center;
    
