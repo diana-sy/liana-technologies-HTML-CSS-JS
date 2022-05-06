@@ -58,35 +58,58 @@
     justify-content:center;
     font-size: x-large;
 }
+
+/* Containers company, products and contact us*/
+
+.infoContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.companyContainer{
+    text-align:center;
+}
+.company{
+    width:90%;
+    height: 170px;
+}
+
+/*Counters*/
+
+.counter-container{
+    display:flex;
+    flex-direction: column;
+}
+
 /* Latest News */
 #dataNews{ 
     display:flex;
     flex-direction: column;
+    background-color: snow;
 }
 .latestNewsContainer{
-    background-color: rgb(236, 236, 236);
     width: 100%;
 }
 #newsTitle{
-    font-size:15px;
-    padding:5%
+    font-size:25px;
+    padding:5%;
+    background-color: snow;
 }
 .newsBox{
     height: auto;
-    width:50%;
-    padding:2%;
-    margin-left: 25%;
+    width:auto;
 }
 .newsDate{
-    font-size: 8px;
+    font-size: 12px;
 }
 .newsText{
-    font-size:10px;
+    font-size:18px;
  }
 
 /* References */
 .reference{
-    font-size:15px;
+    font-size:25px;
     padding:5%
 }
 #referData{
@@ -95,63 +118,62 @@
 }
 .refBox{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 }
 #refImg{
     display:flex;
     justify-content:center;
-    width:50%;
-    height:90px;
     
   }
   .refBoxText{
       display:flex;
       flex-direction: column;
       padding:0.5%;
-      width: 50%;
-      border-left:1px solid rgb(201, 195, 195);
+
   }
 #refName{
     display:flex;
     justify-content:center;
-    font-size: 16px;
+    font-size: 18px;
     border-top:none;
 }
 #refDescription{
     display:flex;
     justify-content:center;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   /* Suscribe  */
   .titleSubscribe{
     display:flex;
     justify-content:center;
-    font-size: 13px;
+    font-size: 23px;
   }
   .textSubscribe{
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    font-size:7px;
+    font-size:13px;
     padding-bottom: 2%;
   }
   #input{
-      width:120px;
-      height:10px;
-      font-size: 8px;
+      width:100px;
+      height:25px;
+      font-size: 12px;
   }
   .btnSuscribe{
-      height:15px;
-      font-size: 8px;
+      height:33px;
+      font-size: 15px;
+      width: 100px;
   }
   /* Bottom  */
   .bottomContainer{
-    width:100%;  
+    width:100%; 
+    padding:3%; 
   }
   #lianaTitle{
-    font-size: 15px;
+    font-size: 23px;
   }
   .bottomNav{
     display:flex;
@@ -161,25 +183,23 @@
     display:flex;
     flex-direction:column;
     align-self: center;
-    font-size:10px;
+    font-size:15px;
  }
  
   .containerInfo{
     display:flex;
     flex-direction: row;
-    gap:20%;
-    font-size:10px;
+    font-size:15px;
   }
   .socialmedia{
     display: flex;
     justify-content:center;
-    padding-top:20%;
-    gap:30%;
+    padding-top:5%;
     
   }
   .fab1{
-    border-radius: 4px;
-        width: 100%;
+    border-radius: 50px;
+       
         height: 30 px;
   }
 }
