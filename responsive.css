@@ -423,7 +423,7 @@
 /* Parallax  */
 .parallaxText{
     justify-content:center;
-    font-size: 55px;
+    font-size: 55px; 
 }
 .btnLearnMore{
     height:45px;
