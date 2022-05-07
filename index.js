@@ -77,9 +77,23 @@ for (x = 0; x < referList.length; x++) {
        </div>
      </div>
      `
+
     }
-     
+    // Thank you message 
+
     let referData = document.querySelector('#referData')   
 
      referData.innerHTML=referElement
+
+  var nextStep = document.querySelector('.btnSuscribe');
+
+  nextStep.addEventListener('click', function (e) {
+    e.preventDefault();
+    // Hide first view
+    document.querySelector('#textContainerS').style.display = 'none';
+    document.querySelector('#input').style.display = 'none';
+
+    // Show thank you message element
+    document.getElementById('thank_you').style.display = 'flex';
+  });
 

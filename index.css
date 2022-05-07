@@ -112,13 +112,14 @@
   
 }
 .searchButton{ 
-  height: 26px;
+  height: 30px;
   border:1px solid green;
   border-radius: 4px;
   background-color:green;
   color:white;
 
 }
+.searchButton:hover{background:hsla(84, 62%, 66%, 0.776);}
 /*parallax*/
 .parallax {
   background-image: url("img/parallax.jpeg");
@@ -145,7 +146,7 @@
   color:white;
   height:35px;
 }
-
+.btnLearnMore:hover{background:hsla(84, 62%, 66%, 0.776);}
 
 /* Containers company, products and contact us*/
 .infoContainer{
@@ -352,6 +353,11 @@ padding-top:1.5%;
   border-radius: 4px;
   border-color: green;
   color:white;
+}
+.btnSuscribe:hover{background:hsla(84, 62%, 66%, 0.776);}
+#thank_you{
+  display:flex;
+  justify-content:center;
 }
 
 /* Bottom */
