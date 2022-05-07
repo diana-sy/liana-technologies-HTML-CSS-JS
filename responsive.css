@@ -72,7 +72,7 @@
 }
 .company{
     width:90%;
-    height: 170px;
+    height: 150px;
 }
 
 /*Counters*/
@@ -547,7 +547,6 @@
   /* Bottom  */
   .bottomContainer{
     width:100%;  
-    padding:2%
   }
   #lianaTitle{
     font-size: 26px;
